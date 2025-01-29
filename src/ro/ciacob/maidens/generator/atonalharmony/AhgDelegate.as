@@ -189,8 +189,8 @@ package ro.ciacob.maidens.generator.atonalharmony {
 				_seededRandom = null;
 			} else {
 				_seededRandom = (_seededRandom || (_seededRandom = SeededRandom.instance));
-				if (_seededRandom.seed != forSeed) {
-					_seededRandom.seed = forSeed;
+				if (_seededRandom.$seed != forSeed) {
+					_seededRandom.$seed = forSeed;
 					_seededRandom.reset();
 				}
 			}
